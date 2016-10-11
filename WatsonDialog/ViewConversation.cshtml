@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Watson Dialog";
+}
+
+<h3>Chat</h3>
+
+<div id="convo_container">
+
+    <div id="message_container">
+        <ul id="chat_messages">
+            @if (ViewBag.OpeningMessage != null)
+            {
+                <li><div class="received_message">@{Write(ViewBag.OpeningMessage); }</div></li>
+            }
+        </ul>
+    </div>
+
+    <div id="input_container">
+        <textarea id="chat_input"></textarea>
+        <button id="chat_send">Send message</button>
+       
+    </div>
+</div>
+
+@section scripts{
+    
+    @Scripts.Render("~/Scripts/chat_control.js")
+    }

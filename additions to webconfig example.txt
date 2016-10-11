@@ -1,0 +1,9 @@
+  <appSettings>
+.... other settings ....
+
+    <add key="WatsonPath" value ="https://gateway.watsonplatform.net/dialog/api"/>
+    <add key="WatsonVersion" value ="v1"/>
+    <add key="WatsonUsername" value ="YOURUSERNAME"/>
+    <add key="WatsonPassword" value ="YOURPASSWORD"/>
+   
+  </appSettings>
